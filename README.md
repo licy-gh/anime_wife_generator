@@ -1,4 +1,6 @@
-# 实验环境
+# avvg
+anime vvife avatar generator
+## 实验环境
 根据NVIDIA StyleGAN GitHub的说明，最低环境要求为：
 - Both Linux and Windows are supported, but we strongly recommend Linux for performance and compatibility reasons.
 - 64-bit Python 3.6 installation. We recommend Anaconda3 with numpy 1.14.3 or newer.
@@ -14,7 +16,7 @@
 - Miniconda: python 3.8, numpy, pillow, requests, tensorboard
 - TensorFlow  1.15.5, Cuda  11.4
 
-# 数据集下载
+## 数据集下载
 
 二者任选其一即可
 
@@ -24,9 +26,9 @@
     - [Baidu: ifdj](https://pan.baidu.com/s/1dQhHeCZp5U0TSoAQEVTmzA?pwd=ifdj)
     - SHA-256: 87ff13a8dde2358eae29f52f079eb5de06ae1027639500701304d733085fec47
 
-# 运行方式
-## 数据集处理
-### 使用Danbooru2020原始数据集
+## 运行方式
+### 数据集处理
+#### 使用Danbooru2020原始数据集
 
 ```shell
 rsync --verbose --recursive rsync://176.9.41.242:873/danbooru2020/ danbooru2020/
@@ -94,7 +96,7 @@ fgrep -v “JPEG 512x512 512x512+0+0 8bit sRGB”
 
 ```
 
-### 使用我处理好的数据集
+#### 使用我处理好的数据集
 
 如果嫌麻烦不想花时间处理数据集，可以直接下载我处理好的数据集解压即可使用：
 
